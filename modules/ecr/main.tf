@@ -1,4 +1,4 @@
-resource "aws_ecr_repository" "foo" {
+resource "aws_ecr_repository" "agilemd" {
   name                 = var.repo_name
   image_tag_mutability = "MUTABLE"
 
