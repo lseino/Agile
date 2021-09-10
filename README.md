@@ -68,12 +68,12 @@ The purpose of this project is to create the terraform code to bring up an AWS V
 ## Building nodejs app and pushing to docker ecr
 * Execute the build script build.sh in the parent dir
 * ```chmod +x build.sh```
-* ``` ./build.sh agilemd {AWS_ECR} ``` #replace AWS_ECR with the output from terraform
-    e.g ```./build.sh agilemd 593161164007.dkr.ecr.us-east-1.amazonaws.com/agilemd``` 
+* ``` ./build.sh agilemd {AWS_ECR} ```           *replace AWS_ECR with the output from terraform*
+          e.g ```./build.sh agilemd 593161164007.dkr.ecr.us-east-1.amazonaws.com/agilemd``` 
     
 * This will build and push image to repository
 * To verify  run``` aws ecr list-images --repository-name agilemd --region us-east-1 ```
 
 
 # Finish
-* ```teraform destroy```
+* ```terraform destroy```
